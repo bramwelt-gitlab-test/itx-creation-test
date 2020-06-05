@@ -10,7 +10,7 @@ on:
 env:
   DOCKER_BUILDCONTEXT: '.'
   DOCKER_FILEPATH: 'Dockerfile'
-  DOCKER_REPOSITORY: ${{ github.repository_owner }}
+  DOCKER_REPOSITORY: ${{ secrets.DOCKER_ORGANIZATION }}
   DOCKER_IMAGE: ${{ github.event.repository.name }}
 
 jobs:
